@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home-page">
+    <div class="card">
+        <div class="details">
+        <h1>1cloud </h1>
+        <p>Keep your files safe and secure with 1cloud</p>
+        <p>Get 20GB free space</p>
+        <button><i class="fas fa-play"></i>How  to use</button>
+        </div>
+       
+        <div class="forms">
+            <div class="form-1 active">
+                <h4>Sign up</h4>
+                <div class="field">
+                    <input type="text" placeholder="username" required>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="email" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="password" required>
+                </div>
+                <div class="field">
+                    <button class="submit">submit</button>
+                </div>
+                <div class="action">
+                    <span>Already have an account ? <span onclick="loginForm()">Sign in</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-2" >
+            <h4>Sign in</h4>
+        
+            <div class="field">
+                <input type="email" placeholder="email" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="password" required>
+            </div>
+            <div class="field">
+                <button class="submit">submit</button>
+            </div>
+            <div class="action">
+                <span>Don't have an account ? <span onclick="registerForm()">Sign up</span></span>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+</div>
+    
+
+<script src="auth.js"></script>
+</body>
+</html>

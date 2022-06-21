@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+::selection{
+    background-color: rgb(137, 11, 255);
+    color: #fff;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("/images/blur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.home-page .card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.home-page .card .details{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    border-right: 1px solid #eee;
+    padding-right: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-page .card .details h1{
+    margin-bottom: 20px;
+}
+
+.home-page .card .details p{
+    color: #333;
+
+}
+
+.home-page .card .details button{
+    margin: 30px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.home-page .card .details button:hover{
+    transform: scale(0.9);
+    color: #eee;
+    
+
+}
+.home-page .card .details i{
+    margin-right: 10px;
+}
+
+.home-page .card .forms{
+    position: relative;
+    max-height: 360px;
+    height: 100%;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+
+}
+
+.home-page .card .forms h4{
+    margin: 20px 0;
+
+}
+.home-page .card .forms .field{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.home-page .card .forms .field input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+    width: 100%;
+
+}
+.home-page .card .forms .field .action{
+    margin-top: 2rem;
+
+}
+
+.home-page .card .forms .field .action span > span{
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+  
+}
+.home-page .card .forms .field .action span > span:hover{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.home-page .card .forms .submit{
+    background-color: #333;
+    border: none;
+    color: #eee;
+    padding: 0.5rem 0.8rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.home-page .card .forms .submit:hover{
+    color: #eee;
+    transform: scale(0.9);
+
+}
+
+
+.home-page .card .forms .form-1 , .form-2{
+    position: absolute;
+    top:-999px;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-page .card .forms .form-1.active{
+    top: 0px;
+}
+.home-page .card .forms .form-2.active{
+    top: 0px;
+}
